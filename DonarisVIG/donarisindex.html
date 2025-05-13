@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaris VIG - Mai mult decat o asigurare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            
+            <img src="https://www.donaris.md/imgbank/misc/5719850d95c39.jpg" alt="Logo" class="logo">
+            
+            <nav>
+                <a href="#home" class="nav-link">Acasa</a>
+                <a href="#services" class="nav-link">Servicii</a>
+                <a href="#about" class="nav-link">Despre Noi</a>
+                <a href="#plans" class="nav-link">Planuri</a>
+                <a href="#contact" class="nav-link">Contacte</a>
+            </nav>
+            
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <a href="#quote" class="btn-primary" style="display: none; white-space: nowrap;">Get a Quote</a>
+                <button id="mobile-menu-button" class="mobile-menu-button">
+                    <i class="ri-menu-line ri-lg"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="container">
+                <a href="#home">Home</a>
+                <a href="#services">Servicii</a>
+                <a href="#about">Despre Noi</a>
+                <a href="#plans">Oferte</a>
+                <a href="#contact">Contacte</a>
+                <a href="#quote" class="btn-primary" style="text-align: center; white-space: nowrap;">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" style="background-image: url('/bg.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="content">
+                <h1 class="animate-fade-in">
+                    <span class="gradient-text">Asigurare</span> pentru ce conteaza mai mult
+                </h1>
+                <p class="animate-slide-up">
+                    La <b>Donaris Group</b>, noi credem in securitate si bunastare pentru fiecare   <mark style="background-color: rgba(165, 214, 167, 0.4); padding: 0 0.25rem;">Client</mark> pe care il asiguram!
+                </p>
+                <div class="buttons animate-slide-up" style="animation-delay: 0.2s;">
+                    <a href="#quote" class="btn-primary">Solicita o consultanta</a>
+                    <a href="#plans" class="secondary-btn">Exploreaza ofertele</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2>Asigurarile noastre</h2>
+                <p>Protecție completă adaptată nevoilor dumneavoastră, cu opțiuni de acoperire flexibile și tarife competitive.</p>
+            </div>
+            
+            <div class="grid">
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <div class="image" style="background-image: url('/fam.jpg')"></div>
+                    <div class="content">
+                        <h3>Asigurare Casa</h3>
+                        <blockquote>
+                            <q>Casa ta este sanctuarul tău. Noi o protejam.</q>
+                        </blockquote>
+                        <p>Acoperire completă pentru locuința dvs. împotriva dezastrelor naturale , furt și daunelor neprevăzute.</p>
+                        <div class="price">
+                            <p>Pret de la <del>$49.99</del> <ins>$39.99</ins> <sup>*</sup> lunar</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="icon"><i class="ri-check-line"></i></div>
+                                <span>Protecția împotriva daunelor structurale</span>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="ri-check-line"></i></div>
+                                <span>Acoperirea bunurilor personale</span>
+                            </li>
+                           
+                        </ul>
+                        <a href="#quote" class="btn-primary">Solicita consultanta</a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="image" style="background-image: url('/car.jpg')"></div>
+                    <div class="content">
+                        <h3>Asigurare Auto</h3>
+                        <blockquote>
+                            <q>Conduceți cu încredere, știind că sunteți protejat.</q>
+                        </blockquote>
+                        <p>Asigurare auto completă cu asistență rutieră și opțiuni de iertare a accidentelor.</p>
+                        <div class="price">
+                            <p>Pret de la <del>$89.99</del> <ins>$69.99</ins> <sup>*</sup> lunar</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="icon"><i class="ri-check-line"></i></div>
+                                <span>Acoperire coliziune</span>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="ri-check-line"></i></div>
+                                <span>Protecție completa</span>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="ri-check-line"></i></div>
+                                <span>Asistență rutieră 24/7</span>
+                            </li>
+                        </ul>
+                        <a href="#quote" class="btn-primary">Solicita consultanta</a>
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <div class="image" style="background-image: url('/fam2.jpg')"></div>
+                    <div class="content">
+                        <h3>Asigurare de sănătate</h3>
+                        <blockquote>
+                            <q>Sănătatea dumneavoastră este bogăția dumneavoastră.</q>
+                        </blockquote>
+                        <p>Planuri de sănătate cu servicii de îngrijire,vizite la specialiști.</p>
+                        <div class="price">
+                            <p>Pret de la <del>$199.99</del> <ins>$149.99</ins> <sup>*</sup> lunar</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="icon"><i class="ri-check-line"></i></div>
+                                <span>Acoperirea îngrijirii preventive</span>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="ri-check-line"></i></div>
+                                <span>Medicamente eliberate pe bază de rețetă</span>
+                            </li>
+                            
+                        </ul>
+                        <a href="#quote" class="btn-primary">Solicita consultanta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <div class="text">
+                <h2>Despre Donaris VIG</h2>
+                <p>Companie fondata in 2008, Donaris Vienna Insurance Group a realizat <mark style="background-color: rgba(165, 214, 167, 0.4); padding: 0 0.25rem;">asigurari de incredere</mark> pentru familii si afaceri de mai mult de 15 ani.Angajamentul nostru pentru servicii excepționale și soluții inovatoare ne-a făcut un nume de încredere în industria asigurărilor.</p>
+                <p>Noi credem in <b> practici de business sustenabile</b> pentru comunitatile pe care le deservim. Pentru fiecare asigurare vândută, plantăm un copac prin intermediul <i>Initiativa GreenSpace</i>.</p>
+                <blockquote>
+                    <p>Misiunea noastră este de a oferi liniște sufletească prin acoperiri complete și servicii excepționale, contribuind în același timp la o planetă mai verde pentru generațiile viitoare.</p>
+                    <cite>— James Wilson, CEO</cite>
+                </blockquote>
+                <address>
+                    <div class="item">
+                        <div class="icon"><i class="ri-map-pin-line"></i></div>
+                        <span>Bulevardul Moscova 15<br>Chisinau , Moldova</span>
+                    </div>
+                    <div class="item">
+                        <div class="icon"><i class="ri-phone-line"></i></div>
+                        <span>022 488 555</span>
+                    </div>
+                    <div class="item">
+                        <div class="icon"><i class="ri-mail-line"></i></div>
+                        <span>info@donarisvig.com</span>
+                    </div>
+                </address>
+            </div>
+            <div class="image">
+                <div class="relative">
+                    <img src="/meeting.jpg" alt="GreenShield Insurance Team">
+                    <div class="badge">
+                        <p>20+</p>
+                        <p>Ani de excelenta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Comparison Table Section -->
+    <section id="plans">
+        <div class="container">
+            <div class="text-center">
+                <h2>Compararea planurilor de asigurare</h2>
+                <p>Comparați planurile noastre pentru a găsi acoperirea perfectă pentru nevoile și bugetul dumneavoastră.</p>
+            </div>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Caracteristici</th>
+                            <th style="text-align: center;">Basic</th>
+                            <th style="text-align: center;">Standard</th>
+                            <th style="text-align: center;">Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><abbr title="Coverage for damage to your property">Acoperirea proprietății</abbr></td>
+                            <td style="text-align: center;">Pana la $100,000</td>
+                            <td style="text-align: center;">Pana la $250,000</td>
+                            <td style="text-align: center;">Pana la $500,000</td>
+                        </tr>
+                        <tr>
+                            <td><abbr title="Protection against legal claims">Protecția răspunderii</abbr></td>
+                            <td style="text-align: center;">$300,000</td>
+                            <td style="text-align: center;">$500,000</td>
+                            <td style="text-align: center;">$1,000,000</td>
+                        </tr>
+                        <tr>
+                            <td><abbr title="Coverage for medical expenses">Asigurare medicala</abbr></td>
+                            <td style="text-align: center;">$1,000</td>
+                            <td style="text-align: center;">$5,000</td>
+                            <td style="text-align: center;">$10,000</td>
+                        </tr>
+                        <tr>
+                            <td><abbr title="Coverage for additional living expenses">Pierderea folosinței</abbr></td>
+                            <td style="text-align: center;">
+                                <div class="icon red"><i class="ri-close-line"></i></div>
+                            </td>
+                            <td style="text-align: center;">20% din locuință</td>
+                            <td style="text-align: center;">30% din locuință</td>
+                        </tr>
+                        <tr>
+                            <td><abbr title="Deductible amount you pay before insurance kicks in">Deductibil</abbr></td>
+                            <td style="text-align: center;">$1,000</td>
+                            <td style="text-align: center;">$500</td>
+                            <td style="text-align: center;">$250</td>
+                        </tr>
+                        <tr>
+                            <td><abbr title="24/7 emergency assistance">Servicii de urgență</abbr></td>
+                            <td style="text-align: center;">
+                                <div class="icon red"><i class="ri-close-line"></i></div>
+                            </td>
+                            <td style="text-align: center;">
+                                <div class="icon green"><i class="ri-check-line"></i></div>
+                            </td>
+                            <td style="text-align: center;">
+                                <div class="icon green"><i class="ri-check-line"></i></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><abbr title="Monthly premium cost">Primă lunară</abbr></td>
+                            <td style="text-align: center; font-weight: 700;">$39<sub>.99</sub></td>
+                            <td style="text-align: center; font-weight: 700;">$59<sub>.99</sub></td>
+                            <td style="text-align: center; font-weight: 700;">$89<sub>.99</sub></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="text-align: center;">
+                                <a href="#quote" class="button-gray">Selecteaza Basic</a>
+                            </td>
+                            <td style="text-align: center;">
+                                <a href="#quote" class="button-secondary">Selecteaza Standard</a>
+                            </td>
+                            <td style="text-align: center;">
+                                <a href="#quote" class="btn-primary">Selecteaza Premium</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="note">
+                <p><sup>*</sup> Prețurile pot varia în funcție de circumstanțele individuale și de locație. Contactați-ne pentru o ofertă personalizată</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section id="quote">
+        <div class="container">
+            <div class="form-section">
+                <h2>Obțineți o ofertă gratuită astăzi</h2>
+                <p>Completați formularul de mai jos și experții noștri în asigurări vă vor oferi o ofertă personalizată, adaptată nevoilor dumneavoastră specifice.</p>
+                <div class="form-container quote-form">
+                    <form id="quote-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <input type="text" id="first-name" placeholder=" " required>
+                                <label for="first-name">Nume</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="last-name" placeholder=" " required>
+                                <label for="last-name">Prenume</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder=" " required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" placeholder=" " required>
+                                <label for="phone">Numar de telefon</label>
+                            </div>
+                        </div>
+                        
+                        <div class="radio-group">
+                            <p style="color: #4B5563; font-weight: 500; margin-bottom: 0.5rem;">Tipul asigurarii</p>
+                            <label>
+                                <input type="radio" name="insurance-type" value="home" checked>
+                                <span class="custom-radio"></span>
+                                <span>Imobil</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="insurance-type" value="auto">
+                                <span class="custom-radio"></span>
+                                <span>Auto</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="insurance-type" value="health">
+                                <span class="custom-radio"></span>
+                                <span>Sanatate</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="insurance-type" value="life">
+                                <span class="custom-radio"></span>
+                                <span>Viata</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="insurance-type" value="business">
+                                <span class="custom-radio"></span>
+                                <span>Business</span>
+                            </label>
+                        </div>
+                        
+                        <div class="range-group">
+                            <p>Nivelul de acoperire</p>
+                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <p class="value">Trageți pentru a selecta valoarea de acoperire dorită: <span id="coverage-value">$250,000</span></p>
+                                <input type="range" id="coverage" min="50000" max="1000000" step="50000" value="250000">
+                            </div>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <p style="color: #4B5563; font-weight: 500; margin-bottom: 0.5rem;">Optiune aditionala</p>
+                            <label>
+                                <input type="checkbox" name="options" value="roadside">
+                                <span class="custom-checkbox"></span>
+                                <span>Asistență rutieră</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="options" value="rental">
+                                <span class="custom-checkbox"></span>
+                                <span>Acoperire închiriere</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="options" value="accident">
+                                <span class="custom-checkbox"></span>
+                                <span>Iertarea accidentelor</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="options" value="bundle">
+                                <span class="custom-checkbox"></span>
+                                <span>Reducere pachet</span>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder=" "></textarea>
+                            <label for="message">Informatie aditionala</label>
+                        </div>
+                        
+                        <div class="terms">
+                            <label>
+                                <input type="checkbox" name="terms" required>
+                                <span class="custom-checkbox"></span>
+                                <span>Sunt de acord cu <a href="#">Termeni si Conditii</a> si <a href="#">Politica de confidențialitate</a></span>
+                            </label>
+                        </div>
+                        
+                        <div class="submit">
+                            <button type="submit" class="btn-primary">Trimite cerere de ofertă</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <div class="sticky">
+                    <h3>De ce sa alegi Donaris VIG?</h3>
+                    
+                    <div class="card">
+                        <h4>Angajamentul nostru</h4>
+                        <pre>La Donaris VIG , noi ne angajam in:
+1. Oferirea de servicii excepționale clienților
+2. Oferirea de tarife competitive
+3. Procesarea rapidă și eficientă a cererilor
+4. Sprijinirea inițiativelor de mediu</pre>
+                        <p>Pentru fiecare asigurare vândută, noi <mark style="background-color: rgba(165, 214, 167, 0.4); padding: 0 0.25rem;">plantam un pom</mark> pentru initiativa GreenSpace</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>Recenzii de la clienti</h4>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <blockquote>
+                                <q>Donaris a facilitat depunerea unei cereri de despăgubire după ce casa noastră a fost avariată în timpul unei furtuni. Au fost receptivi, atenți, iar soluționarea a fost corectă și rapidă.</q>
+                                <p>— Olga, <sub>Proprietar imobil</sub></p>
+                            </blockquote>
+                            <blockquote>
+                                <q>Lucrez cu Donaris de peste 5 ani și au furnizat în mod constant servicii excelente și tarife competitive. Angajamentul lor față de cauzele de mediu este un bonus!</q>
+                                <p>— Mihail, <sub>Client din 2020</sub></p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>Premiile noastre</h4>
+                        <ul>
+                            <li>
+                                <div class="icon"><i class="ri-award-line"></i></div>
+                                <div>
+                                    <p>Cel mai bun serviciu pentru clienți</p>
+                                    <cite>— Insurance Excellence Awards, 2024</cite>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="ri-award-line"></i></div>
+                                <div>
+                                    <p>Topul întreprinderilor durabile</p>
+                                    <cite>— Green Business Alliance, 2023</cite>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="ri-award-line"></i></div>
+                                <div>
+                                    <p>Cel mai inovator furnizor de asigurări</p>
+                                    <cite>— Financial Innovation Summit, 2022</cite>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics Section with Charts -->
+<section id="statistics">
+    <div class="container">
+        <div class="text-center">
+            <h2>Perspective asupra asigurărilor</h2>
+            <p>Înțelegerea datelor care stau la baza cererilor de despăgubire și a acoperirii ne ajută să oferim o protecție mai bună clienților noștri.</p>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Cereri de despăgubire în funcție de tipul de asigurare</h3>
+                <div id="claims-chart" class="chart"></div>
+            </div>
+            
+            <div class="card">
+                <h3>Satisfacția clienților</h3>
+                <div id="satisfaction-chart" class="chart"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Multimedia Section -->
+<section id="multimedia">
+    <div class="container">
+        <div class="text-center">
+            <h2>Resurse multimedia</h2>
+            <p>Explorați resursele noastre educaționale pentru a afla mai multe despre acoperirea și protecția asigurărilor.</p>
+        </div>
+        
+        <div class="grid">
+            <div>
+                <h3>Videoclipuri educaționale privind asigurările</h3>
+                <div class="video-container">
+                    <video controls>
+                        <source src="/vig.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                        
+                </div>
+                <p>
+                    Urmăriți videoclipurile noastre educaționale pentru a afla mai multe despre diferitele tipuri de asigurări și despre modul în care acestea vă pot proteja pe dumneavoastră și familia dumneavoastră.
+                </p>
+                
+                <h3>Podcast Asigurări</h3>
+                <div class="podcast-card">
+                    <div class="header">
+                        <div class="icon"><i class="ri-podcast-line"></i></div>
+                        <div>
+                            <h4>Insiderul de asigurari</h4>
+                            <p>Episodul 42: Înțelegerea asigurărilor pentru locuințe</p>
+                        </div>
+                    </div>
+                    <audio controls>
+                        <source src="/podcast.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            
+            <div>
+                <h3>Găsiți-ne</h3>
+                <div class="map">
+                
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43493.60987996455!2d28.800112750186262!3d47.05297210000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97ce331369157%3A0x99cbf89d49b55174!2sDonaris%20Vienna%20Insurance%20Group!5e0!3m2!1sru!2s!4v1746527556617!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+                
+                <h3>Resurse de asigurare</h3>
+                <div class="resources-card">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="icon"><i class="ri-file-list-line"></i></div>
+                                <span>Ghid de asigurare a locuinței <sup>PDF</sup></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon"><i class="ri-file-list-line"></i></div>
+                                <span>Explicarea acoperirii de asigurare auto <sup>PDF</sup></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon"><i class="ri-file-list-line"></i></div>
+                                <span>Opțiuni de asigurare de sănătate <sup>PDF</sup></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon"><i class="ri-file-list-line"></i></div>
+                                <span>Asigurarea de viață 101 <sup>PDF</sup></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon"><i class="ri-file-list-line"></i></div>
+                                <span>Lista de verificare a asigurărilor pentru întreprinderi <sup>PDF</sup></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials">
+    <div class="container">
+        <div class="text-center">
+            <h2>Ce spun clienții noștri</h2>
+            <p>Nu ne credeți doar pe cuvânt. Aflați de la clienții noștri mulțumiți.</p>
+        </div>
+        
+        <div class="grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <div class="header">
+                    <div class="avatar">
+                        <span>RJ</span>
+                    </div>
+                    <div>
+                        <h4>Robert</h4>
+                        <p>Proprietar imobil, Chisinau</p>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <blockquote>
+                    <q>După ce un copac a căzut pe acoperișul nostru în timpul unei furtuni, Donaris a fost acolo pentru noi la fiecare pas. Procesul de despăgubire a fost ușor și ne-au ajutat să găsim o locuință temporară în timpul reparațiilor.</q>
+                </blockquote>
+                <p class="footer">
+                    <i>Client din 2019</i>
+                </p>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <div class="header">
+                    <div class="avatar">
+                        <span>EL</span>
+                    </div>
+                    <div>
+                        <h4>Emilia</h4>
+                        <p>Proprietar de afaceri mici, Orhei</p>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                </div>
+                <blockquote>
+                    <q>În calitate de proprietar al unei afaceri mici, aveam nevoie de o acoperire completă care să nu mă coste prea mult. GreenShield mi-a oferit exact ceea ce aveam nevoie, iar echipa lor de servicii pentru clienți a fost întotdeauna de ajutor ori de câte ori am avut întrebări.</q>
+                </blockquote>
+                <p class="footer">
+                    <i>Client din 2021</i>
+                </p>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <div class="header">
+                    <div class="avatar">
+                        <span>DW</span>
+                    </div>
+                    <div>
+                        <h4>David</h4>
+                        <p>Familie de patru persoane, Soroca</p>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <blockquote>
+                    <q>Am încheiat un pachet de asigurări pentru casă, mașină și sănătate cu Donaris, iar economiile au fost substanțiale. Ceea ce apreciez cel mai mult este faptul că își fac timp să ne explice opțiunile de asigurare într-un limbaj simplu.</q>
+                </blockquote>
+                <p class="footer">
+                    <i>Client din 2018</i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="info">
+            <h2>Contactați-ne</h2>
+            <p>Aveți întrebări despre polițele noastre de asigurare? Echipa noastră este aici pentru a vă ajuta. Contactați-ne prin oricare dintre următoarele canale.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <div class="icon"><i class="ri-phone-line"></i></div>
+                    <h3>Apelati-ne</h3>
+                    <p>
+                        (022) 488 522<br>
+                        
+                    </p>
+                    <p class="small">
+                        Luni-Vineri 08:00-18:00<br>
+                        Sambata 09:00-14:00
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div class="icon"><i class="ri-mail-line"></i></div>
+                    <h3>Email</h3>
+                    <p>
+                        <b>Întrebări generale:</b><br>
+                        <i>info@gdonarisvig.com</i>
+                    </p>
+                    <p>
+                        <b>Departamentul de reclamații:</b><br>
+                        <i>claims@donarisvig.com</i>
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div class="icon"><i class="ri-map-pin-line"></i></div>
+                    <h3>Vizitați-ne</h3>
+                    <address class="not-italic">
+                        Bulevardul Moscova 8<br>
+                        Chisinau<br>
+                        Moldova
+                    </address>
+                </div>
+                
+                <div class="card">
+                    <div class="icon"><i class="ri-customer-service-line"></i></div>
+                    <h3>Live Chat</h3>
+                    <p>
+                        Discutați cu reprezentanții serviciului nostru pentru clienți în timp real.
+                    </p>
+                    <br>
+                    <a href="#" class="btn-primary">Incepe discutia</a>
+                </div>
+            </div>
+            
+            <div class="social-card">
+                <h3>Urmăriți-ne</h3>
+                <div class="icons">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-x-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form">
+            <div class="form-card">
+                <h3>Trimiteți-ne un mesaj</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="contact-name">Nume</label>
+                        <input type="text" id="contact-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-subject">Subiect</label>
+                        <select id="contact-subject" required>
+                            <option value="">Selecteaza un subiect</option>
+                            <option value="quote">Oferta de asigurare</option>
+                            <option value="claim">Depuneți o reclamație</option>
+                            <option value="billing">Întrebare privind facturarea</option>
+                            <option value="policy">Întrebare politică</option>
+                            <option value="other">Altele</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-message">Mesaj</label>
+                        <textarea id="contact-message" rows="5" required></textarea>
+                    </div>
+                    
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="newsletter" checked>
+                            <span class="custom-checkbox"></span>
+                            <span>Abonați-vă la newsletter-ul nostru pentru sfaturi și actualizări privind asigurările</span>
+                        </label>
+                    </div>
+                    
+                    <div class="submit">
+                        <button type="submit" class="btn-primary">Trimite mesaj</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="grid">
+            <div>
+                <img src="https://www.donaris.md/imgbank/misc/5719850d95c39.jpg" alt="Logo" class="logo">
+                
+                <p>
+                    Oferim soluții complete de asigurare din 2008. Misiunea noastră este să protejăm ceea ce contează cel mai mult pentru dumneavoastră.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-x-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h3>Linkuri rapide</h3>
+                <ul>
+                    <li><a href="#home">Acasa</a></li>
+                    <li><a href="#services">Servicii</a></li>
+                    <li><a href="#about">Despre noi</a></li>
+                    <li><a href="#plans">Planuri</a></li>
+                    <li><a href="#quote">Obtine o oferta</a></li>
+                    <li><a href="#contact">Contacte</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3>Produse asigurate</h3>
+                <ul>
+                    <li><a href="#">Asigurare imobil</a></li>
+                    <li><a href="#">Asigurare auto</a></li>
+                    <li><a href="#">Asigurare medicala</a></li>
+                    <li><a href="#">Asigurarea vietii</a></li>
+                    <li><a href="#">Asigurarea afacerii</a></li>
+                    <li><a href="#">Asigurarea calatoriei</a></li>
+                </ul>
+            </div>
+            
+            <div class="subscribe">
+                <h3>Aboneaza-te</h3>
+                <p>Rămâneți la curent cu ultimele noastre știri și oferte.</p>
+                <form id="subscribe-form">
+                    <div>
+                        <input type="email" placeholder="E-mail">
+                        <br>
+                        <br>
+                        <button type="submit">Aboneaza-te</button>
+                    </div>
+                </form>
+                <p class="note">
+                    Prin abonare, sunteți de acord cu <a href="#">Politica de confidențialitate</a>.
+                </p>
+            </div>
+        </div>
+        
+        <div class="divider">
+            <div class="bottom">
+                <p>© 2025 Donaris Vienna Insurance Group.Toate drepturile rezervate.</p>
+                <div class="links">
+                    <a href="#">Politica de confidențialitate</a>
+                    <a href="#">Termeni de serviciu</a>
+                    <a href="#">Politica privind cookie-urile</a>
+                    <a href="#">Accesibilitate</a>
+                </div>
+            </div>
+            <div class="payment-icons">
+                <i class="ri-visa-line"></i>
+                <i class="ri-mastercard-line"></i>
+                <i class="ri-paypal-line"></i>
+                <i class="ri-apple-fill"></i>
+                <i class="ri-google-fill"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="back-to-top">
+    <i class="ri-arrow-up-line"></i>
+</button>
+
+<!-- Toast Notification -->
+<div id="toast">
+    <div class="icon"><i class="ri-check-line"></i></div>
+    <div>
+        <h4 id="toast-title">Success!</h4>
+        <p id="toast-message">Formularul dvs. a fost trimis cu succes.</p>
+    </div>
+    <button id="toast-close" class="close">
+        <i class="ri-close-line"></i>
+    </button>
+</div>
+<script src="/script.js">  </script>
+</body>
+</html>
